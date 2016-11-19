@@ -1,5 +1,8 @@
 # The deployment section should be excluded until
 # it is explicitly included in module 5
+# Add the following Environment Variable in circle.ci:
+# curl -H "Content-Type: application/json" --date '{"build": true}' -X POST <trigger_url>
+# e.g. https://registry.hub.docker.com/u/jiafanz/docker-ci/trigger/e171b02e-e0b7-47a4-b8cd-c9395e5d8b9f/
 
 deployment:
   dockerhub:
